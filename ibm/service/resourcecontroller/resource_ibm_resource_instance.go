@@ -93,7 +93,7 @@ func ResourceIBMResourceInstance() *schema.Resource {
 				ValidateFunc: validate.InvokeValidator("ibm_resource_instance",
 					"resource_group_id"),
 			},
-
+			// ### Test modification
 			"parameters": {
 				Type:          schema.TypeMap,
 				Optional:      true,
